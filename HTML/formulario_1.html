@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <h2>Formulario de datos</h2>
+
+    <form>
+        <label for="name">Nombre: </label>
+        <input type="text" id="name" name="name" placeholder="Laura" />
+        <br/><br/>
+        <label for="age">Edad: </label>
+        <input type="number" id="age" name="age" placeholder="25" />
+        <!-- 
+            Para duplicar una línea: alt+shift+abajo
+        -->
+        <br/><br/>
+        <label for="languages">Selecciona tu lenguaje favorito: </label>
+        <br/>
+        <!-- si agregamo multiple como atributo de select podemos 
+            seleccionar varias opciones
+        -->
+        <select id="languages">
+            <option value="java">Java</option>
+            <option value="php">PHP</option>
+            <option value="csharp">C#</option>
+            <option value="python">Python</option>
+        </select>
+
+        <br/><br/>
+        <input type="submit" value="Registrarme" />
+
+    </form>
+
+</body>
+</html>
