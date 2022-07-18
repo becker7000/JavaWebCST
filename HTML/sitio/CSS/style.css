@@ -1,0 +1,72 @@
+
+/* DEFINIMOS NUESTRA PALETA DE COLORES */
+:root{
+    /*  colores:    */
+    --black: #211d1d;
+    --white: #e2e2e2;
+    --gray: #444444;
+    --blue-forte: #45818e;
+    --blue-light:#76a5af;
+    /*  tamaños de fuente   */
+    --ssm: 14px;
+    --sm: 18px;
+    --md: 26px;
+    --lg: 36px;
+}
+
+body{
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.first-container{
+    margin: 16px auto;
+    width: 80%;
+    background-image: url(https://cdn.pixabay.com/photo/2014/09/20/13/52/board-453758_960_720.jpg);
+    color: var(--black);
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+.gandalf{
+    border-radius: 50%;
+    border: 4px solid var(--gray);
+}
+
+.rocket, .social{
+    border-radius: 50%;
+    border: 2px solid var(--gray);
+}
+
+.second-container{
+    border-top: 4px solid var(--gray);
+    border-bottom: 4px solid var(--gray);
+    border-radius: 0px 28px 0px 28px ;
+} /* izquierda-superior derecha-superior derecha-inferior izquiera-inferior */
+
+.third-container{
+    color: var(--white);
+}
+
+.hobbies, .abilities, .languages{
+    background-color: var(--gray);
+    border-radius: 16px;
+}
+
+.espana{
+    border-radius: 50%;
+    width: 400px;
+}
+
+.fifth-container{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+
+
+
+
+
