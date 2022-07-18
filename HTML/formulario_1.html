@@ -8,7 +8,7 @@
     
     <h2>Formulario de datos</h2>
 
-    <form>
+    <form action="#" method="post">
         <label for="name">Nombre: </label>
         <input type="text" id="name" name="name" placeholder="Laura" />
         <br/><br/>
@@ -23,11 +23,11 @@
         <!-- si agregamo multiple como atributo de select podemos 
             seleccionar varias opciones
         -->
-        <select id="languages">
-            <option value="java">Java</option>
-            <option value="php">PHP</option>
-            <option value="csharp">C#</option>
-            <option value="python">Python</option>
+        <select id="languages" name="language">
+            <option value="java" name="language">Java</option>
+            <option value="php" name="language">PHP</option>
+            <option value="csharp" name="language">C#</option>
+            <option value="python" name="language">Python</option>
         </select>
 
         <br/><br/>
