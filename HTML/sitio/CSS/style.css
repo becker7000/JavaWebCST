@@ -15,12 +15,14 @@
 }
 
 body{
-    margin: 0 auto;
+    margin: 0;
     background-color: var(--white);
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .first-container{
-    margin: 16px auto;
+    margin: 16px auto; /* Centramos el contenedor */
+    padding: 20px;
     width: 80%;
     background-image: url(https://cdn.pixabay.com/photo/2014/09/20/13/52/board-453758_960_720.jpg);
     color: var(--black);
@@ -29,41 +31,164 @@ body{
     
 }
 
-.gandalf{
-    border-radius: 50%;
-    border: 4px solid var(--gray);
+.title{
+    font-size: var(--lg);
+    margin: 0;
 }
 
-.rocket, .social{
-    border-radius: 50%;
-    border: 2px solid var(--gray);
+.job{
+    display: inline;
 }
+
+.prog{ /* gif del programador */
+    width: 56px;
+    margin-left: 16px;
+    border-radius: 4px;
+    position: relative;
+    top: 8px; /* Desde arriba hacia abajo */
+}
+
+.subtitle{
+    font-size: var(--sm);
+}
+
+/* Estilo de la navbar */
+.navbar{
+    width: 10%;
+    margin: 12px auto;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centramos de arriba hacia abajo*/
+    position: fixed; /* deja el elemento en su posición inicial */
+}
+
+.navbar ul{ /* Lista del navbar*/
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden; /* Oculta elementos (li,a,img) para que no salgan del contendor de la ul */
+    background-color: var(--gray);
+    border-radius: 16px;
+}
+
+.navbar li a{
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none; /* Quita los subrayados de los ancor */
+}
+
+/* Esto va a suceder al poner el cursor sobre los ancor */
+.navbar li a:hover{
+    background-color: var(--black);
+    color: var(--blue-light);
+}
+
+/* Estilo para la información sobre mí */
 
 .second-container{
+    display: grid; /* Genera separaciones */
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    margin: 40px auto;
+    width: 70%;
     border-top: 4px solid var(--gray);
     border-bottom: 4px solid var(--gray);
     border-radius: 0px 28px 0px 28px ;
 } /* izquierda-superior derecha-superior derecha-inferior izquiera-inferior */
 
+.gandalf{
+    width: 180px;
+    border-radius: 50%;
+    border: 4px solid var(--gray);
+    margin: 20x auto;
+}
+
+.about-me{
+    align-items: center;
+    text-align: center;
+    color: var(--black);
+    font-size: var(--sm);
+    margin: 20px;
+}
+
+.first-text{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.second-text{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.rocket, .social{
+    width: 100px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--gray);
+}
+
 .third-container{
     color: var(--white);
+    width: 70%;
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 40px;
 }
 
 .hobbies, .abilities, .languages{
+    margin: 16px;
+    padding-left: 16px;
+    padding-right: 8px;
     background-color: var(--gray);
     border-radius: 16px;
+    font-size: var(--ssm);
+}
+
+.hobbies:hover, .abilities:hover, .languages:hover{
+    background-color: var(--black);
+    color: var(--blue-light);
+}
+
+.fourth-container{
+    width: 70%;
+    margin: 20px auto;
+    font-size: var(--ssm);
+    text-align: center;
+}
+
+.trip{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .espana{
     border-radius: 50%;
-    width: 400px;
+    width: 300px;
+    margin: 12px auto;
 }
 
 .fifth-container{
     background-color: var(--black);
     color: var(--white);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
 }
 
+.fifth-container:hover{
+    color: var(--blue-light)
+}
+
+.fb, .in{
+    width: 80px;
+    margin: 0 auto;
+}
 
 
 
