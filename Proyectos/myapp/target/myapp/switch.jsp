@@ -1,4 +1,3 @@
-
 <%! int dia = 2; %>
 
 <!DOCTYPE html>
@@ -37,8 +36,6 @@
         }
 
     %>
-
-
 
 </body>
 </html>
